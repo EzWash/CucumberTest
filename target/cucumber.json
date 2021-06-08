@@ -1,0 +1,1306 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T16:09:36.933Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1998600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1002300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2998800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2003300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.init()"
+            }
+          },
+          {
+            "result": {
+              "duration": 995400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.init()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "El Car Wash pudo editar sus datos con exito",
+        "description": "",
+        "id": "editar-datos-generales-del-car-wash;el-car-wash-pudo-editar-sus-datos-con-exito",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1993700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que ingreso al API \"http://localhost:8080/api\" para actualizar datos del CarWash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080/api\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.EditarDatosCarWash.que_ingreso_al_API_para_actualizar_datos_del_CarWash(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubica en la ruta \"/carwashes/1\" para actualizar datos del CarWash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/carwashes/1\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumber.features.EditarDatosCarWash.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1003700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "mediante el metodo \"PUT\" para actualizar datos del CarWash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.EditarDatosCarWash.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49993900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "tengo el siguiente formulario para actualizar datos del CarWash",
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Description",
+                  "Name",
+                  "Name_owner",
+                  "Location"
+                ]
+              },
+              {
+                "cells": [
+                  "Todo bonito",
+                  "Todo limpio",
+                  "Pabdsao Escobr",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1249584800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "envio su peticion para actualizar datos del CarWash",
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1998400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "se actualiza los datos del CarWash",
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.se_insertaron_los_CarWash()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Editar datos generales del Car Wash",
+    "description": "  Como Car Wash\n  quiero editar mis datos generales\n  Para mantenerlos actualizados en el tiempo",
+    "id": "editar-datos-generales-del-car-wash",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/EditarDatosCarWash.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T16:09:38.354Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Pudo registrar los datos de sus autos",
+        "description": "",
+        "id": "registrar-datos-del-auto-del-cliente;pudo-registrar-los-datos-de-sus-autos",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar - Carro_User",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarCarroCliente.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/api/vehicles\" para agregar - Carro_User",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/vehicles\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumber.features.RegistrarCarroCliente.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 973300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"POST\" para agregar - Carro_User",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarCarroCliente.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3004500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente Carro para agregar",
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.tengo_el_siguiente_carro_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Model",
+                  "Brand",
+                  "Registration_Plate",
+                  "Location",
+                  "User"
+                ]
+              },
+              {
+                "cells": [
+                  "Esquina12",
+                  "12/11/2020",
+                  "FSAD",
+                  "7",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "Esquina12",
+                  "12/11/2020",
+                  "FSAD",
+                  "7",
+                  "1"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217845800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "envio su peticion para agregar - Carro_User",
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "se registro Carro",
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.se_insertaron_los_Carros()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registrar datos del auto del cliente",
+    "description": "  Como Usuario\n  Yo quiero registrar datos de mi auto\n  Para poder aplicar los servicios a mi vehículo en específico",
+    "id": "registrar-datos-del-auto-del-cliente",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/RegistrarCarroCliente.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T16:09:38.586Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.init()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "El usuario intenta registrarse como comprador",
+        "description": "",
+        "id": "registrar-datos-generales-del-car-wash;el-usuario-intenta-registrarse-como-comprador",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar - CarWash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarCarwash.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubico en la ruta \"/api/carwashes\" para agregar - CarWash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/carwashes\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumber.features.RegistrarCarwash.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "mediante el metodo \"POST\" para agregar - CarWash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarCarwash.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "tengo el siguiente CarWash para agregar",
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.tengo_el_siguiente_producto_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Description",
+                  "Name_owner",
+                  "Location"
+                ]
+              },
+              {
+                "cells": [
+                  "Esquina12",
+                  "12/11/2020",
+                  "FSAD",
+                  "5"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81915200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "envio su peticion para agregar - CarWash",
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 992400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "se registro CarWash",
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.se_insertaron_los_productos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registrar datos generales del Car Wash",
+    "description": "  Como CarWash\n  Yo quiero registrarme en la aplicaciÃ³n\n  Para obtener usuarios por medio de la aplicaciÃ³n",
+    "id": "registrar-datos-generales-del-car-wash",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/RegistrarCarwash.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T16:09:38.681Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Pudo registrar sus datos personales",
+        "description": "",
+        "id": "registrar-datos-personales-del-cliente;pudo-registrar-sus-datos-personales",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar - Usuario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/api/users\" para agregar - Usuario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/users\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"POST\" para agregar - Usuario",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1999000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente Usuario para agregar",
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.tengo_el_siguiente_usuario_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First_Name",
+                  "Last_Name",
+                  "Email",
+                  "Phone",
+                  "Gender",
+                  "Password",
+                  "Location"
+                ]
+              },
+              {
+                "cells": [
+                  "Roberto",
+                  "Vega",
+                  "terocal@hotmail.com",
+                  "987654321",
+                  "M",
+                  "rBT",
+                  "6"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96832700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para agregar - Usuario",
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat cucumber.features.RegistrarDatosPersonalesCliente.se_insertaron_los_usuarios(RegistrarDatosPersonalesCliente.java:70)\r\n\tat ✽.se registro Usuario(file:///C:/Users/51920/Desktop/Pruebas%20Cucumber/src/test/resources/RegistrarDatosPersonalesCliente.feature:14)\r\n",
+              "duration": 2995900,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "se registro Usuario",
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.se_insertaron_los_usuarios()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registrar datos personales del cliente",
+    "description": "  Como Usuario\n  Quiero registrar mis datos personales dentro de la aplicación\n  Para poder tener un servicio más personalizado dentro de la aplicación",
+    "id": "registrar-datos-personales-del-cliente",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/RegistrarDatosPersonalesCliente.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T16:09:38.808Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El Car Wash pudo registrar un servicio",
+        "description": "",
+        "id": "registrar-servicios;el-car-wash-pudo-registrar-un-servicio",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar - Servicio",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarServicio.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1003300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/api/carwashes/1/service\" para agregar - Servicio",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/carwashes/1/service\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumber.features.RegistrarServicio.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"POST\" para agregar - Servicio",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarServicio.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1996000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente Servicio para agregar",
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.tengo_el_siguiente_carro_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Description",
+                  "Details",
+                  "Is_promotion",
+                  "Price"
+                ]
+              },
+              {
+                "cells": [
+                  "Roberto",
+                  "Vega",
+                  "terocal@hotmail.com",
+                  "0",
+                  "30.0"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23998300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para agregar - Servicio",
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1005100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "se registro Servicio",
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.se_insertaron_los_Carros()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registrar Servicios",
+    "description": "  Como Car Wash\n  Quiero registrar mis servicios\n  Para publicarlos en la aplicación y que puedan ser contratadas",
+    "id": "registrar-servicios",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/RegistrarServicio.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T16:09:38.848Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.init()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "El Car Wash pudo registrar a un trabajador",
+        "description": "",
+        "id": "registrar-trabajadores-del-car-wash;el-car-wash-pudo-registrar-a-un-trabajador",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que ingreso al API \"http://localhost:8080\" para agregar - Trabajador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarTrabajador.que_ingreso_al_API_para_agregar(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "se ubico en la ruta \"/api/carwashes/1/staff\" para agregar - Trabajador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/carwashes/1/staff\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumber.features.RegistrarTrabajador.se_ubico_en_la_ruta_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "mediante el metodo \"POST\" para agregar - Trabajador",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.RegistrarTrabajador.mediante_el_metodo_para_agregar(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "tengo el siguiente Trabajador para agregar",
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.tengo_el_siguiente_trabajador_para_agregar(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First_name",
+                  "Last_name",
+                  "Email",
+                  "Phone",
+                  "Gender"
+                ]
+              },
+              {
+                "cells": [
+                  "Roberto",
+                  "Vega",
+                  "terocal@hotmail.com",
+                  "123456789",
+                  "M"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24000700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "envio su peticion para agregar - Trabajador",
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.envio_su_peticion_para_agregar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat cucumber.features.RegistrarTrabajador.se_insertaron_los_trabajadores(RegistrarTrabajador.java:67)\r\n\tat ✽.se registro Trabajador(file:///C:/Users/51920/Desktop/Pruebas%20Cucumber/src/test/resources/RegistrarTrabajadorCarWash.feature:14)\r\n",
+              "duration": 999200,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "se registro Trabajador",
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.se_insertaron_los_trabajadores()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registrar trabajadores del Car Wash",
+    "description": "  Como Car Wash\n  Yo quiero registrar a mis trabajadores\n  Para poder utilizarlos en cada servicio que llegue",
+    "id": "registrar-trabajadores-del-car-wash",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/RegistrarTrabajadorCarWash.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-08T16:09:38.888Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.EditarDatosCarWash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarroCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarCarwash.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarDatosPersonalesCliente.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarServicio.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.RegistrarTrabajador.init()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.init()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "El usuario puede ver Car Wash cercanos a su ubicacion",
+        "description": "",
+        "id": "ver-car-wash-cercanos;el-usuario-puede-ver-car-wash-cercanos-a-su-ubicacion",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que ingreso al API \"http://localhost:8080\" - user_carwash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://localhost:8080\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.VerCarWashCercano.que_ingreso_al_API(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "se ubico en la ruta \"/api/carwashes/12.114006/-77.0070258/1\" - user_carwash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/api/carwashes/12.114006/-77.0070258/1\"",
+                  "offset": 20
+                }
+              ],
+              "location": "cucumber.features.VerCarWashCercano.se_ubico_en_la_ruta(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "mediante el metodo \"GET\" - user_carwash",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumber.features.VerCarWashCercano.mediante_el_metodo(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "envio su peticion - user_carwash",
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.envio_su_peticion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "obtuvo la lista de CarWashes - user_carwash",
+            "match": {
+              "location": "cucumber.features.VerCarWashCercano.obtuvo_los_CarWash()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Ver Car Wash cercanos",
+    "description": "  Como Usuario\n  Yo quiero ver los Car Wash mÃ¡s cercanos a mi ubicaciÃ³n\n  Para poder solicitar el servicio de uno de ellos",
+    "id": "ver-car-wash-cercanos",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/VerCarWashCercano.feature",
+    "tags": []
+  }
+]
