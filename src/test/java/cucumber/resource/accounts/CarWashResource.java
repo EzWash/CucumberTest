@@ -2,6 +2,16 @@ package cucumber.resource.accounts;
 
 
 public class CarWashResource {
+    private Double id;
+
+    public Double getId() {
+        return id;
+    }
+
+    public CarWashResource setId(Double id) {
+        this.id = id;
+        return this;
+    }
 
     private String description;
 

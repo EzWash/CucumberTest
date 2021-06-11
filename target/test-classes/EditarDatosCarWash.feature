@@ -1,5 +1,6 @@
 # language: en
 # encoding: iso-8859-1
+
 Feature: Editar datos generales del Car Wash
   Como Car Wash
   quiero editar mis datos generales
