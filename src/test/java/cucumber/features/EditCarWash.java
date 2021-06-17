@@ -1,7 +1,7 @@
 package cucumber.features;
 
 import cucumber.http.Sprint1.EditCarWashHttp;
-import cucumber.resource.accounts.CarWashResource;
+import cucumber.resource.accounts.StafffResource;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -49,7 +49,7 @@ public class EditCarWash {
         List<Map<String,Double>> list1 = a.asMaps(String.class,double.class);
 
         for (int i = 0; i < list.size(); i++) {
-            CarWashResource carwash = new CarWashResource();
+            StafffResource carwash = new StafffResource();
             carwash.setName(list.get(i).get("Name"));
             carwash.setDescription(list.get(i).get("Description"));
             carwash.setLocation(list1.get(i).get("Location"));

@@ -1,7 +1,7 @@
 package cucumber.http.Sprint3;
 
 import com.google.gson.Gson;
-import cucumber.resource.accounts.CarWashResource;
+import cucumber.resource.accounts.StafffResource;
 import okhttp3.*;
 
 import java.io.IOException;
@@ -63,10 +63,10 @@ public class SearchCarWash_NameHttp {
         }
     }
 
-    public CarWashResource obtenerCarWashNombre() throws IOException {
+    public StafffResource obtenerCarWashNombre() throws IOException {
         Gson gson = new Gson();
         ResponseBody responseBody = this.response.body();
-        return gson.fromJson(responseBody.string(), (Type) CarWashResource.class);
+        return gson.fromJson(responseBody.string(), (Type) StafffResource.class);
     }
 
     private String buildUrl(){

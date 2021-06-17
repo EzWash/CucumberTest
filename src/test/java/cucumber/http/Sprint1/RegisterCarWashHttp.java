@@ -1,7 +1,7 @@
 package cucumber.http.Sprint1;
 
 import com.google.gson.Gson;
-import cucumber.resource.accounts.CarWashResource;
+import cucumber.resource.accounts.StafffResource;
 import okhttp3.*;
 
 import java.io.IOException;
@@ -45,9 +45,9 @@ public class RegisterCarWashHttp {
         this.method = method;
     }
 
-    public void createCarWash(CarWashResource carwash) throws IOException {
+    public void createCarWash(StafffResource carwash) throws IOException {
         Gson gson = new Gson();
-        this.carwashes.add(gson.toJson(carwash, CarWashResource.class));
+        this.carwashes.add(gson.toJson(carwash, StafffResource.class));
     }
 
     public void make() throws IOException {

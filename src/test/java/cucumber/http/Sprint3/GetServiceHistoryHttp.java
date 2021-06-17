@@ -1,8 +1,7 @@
 package cucumber.http.Sprint3;
 
 import com.google.gson.Gson;
-import cucumber.resource.accounts.CarWashResource;
-import cucumber.resource.accounts.UserResource;
+import cucumber.resource.accounts.StafffResource;
 import cucumber.resource.business.ServiceResource;
 import okhttp3.*;
 
@@ -64,7 +63,7 @@ public class GetServiceHistoryHttp {
         }
     }
 
-    public CarWashResource obtenerServices() throws IOException {
+    public StafffResource obtenerServices() throws IOException {
         Gson gson = new Gson();
         ResponseBody responseBody = this.response.body();
         return gson.fromJson(responseBody.string(), (Type) ServiceResource.class);

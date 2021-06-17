@@ -1,7 +1,6 @@
 package cucumber.http.Sprint1;
 
 import com.google.gson.Gson;
-import cucumber.resource.accounts.CarWashResource;
 import cucumber.resource.accounts.UserResource;
 import okhttp3.*;
 

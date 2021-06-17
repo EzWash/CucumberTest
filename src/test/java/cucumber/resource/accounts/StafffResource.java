@@ -1,14 +1,14 @@
 package cucumber.resource.accounts;
 
 
-public class CarWashResource {
+public class StafffResource {
     private Double id;
 
     public Double getId() {
         return id;
     }
 
-    public CarWashResource setId(Double id) {
+    public StafffResource setId(Double id) {
         this.id = id;
         return this;
     }
@@ -29,7 +29,7 @@ public class CarWashResource {
         return location;
     }
 
-    public CarWashResource setLocation(Double location) {
+    public StafffResource setLocation(Double location) {
         this.location = location;
         return this;
     }
@@ -38,7 +38,7 @@ public class CarWashResource {
         return description;
     }
 
-    public CarWashResource setDescription(String description) {
+    public StafffResource setDescription(String description) {
         this.description = description;
         return this;
     }
@@ -47,7 +47,7 @@ public class CarWashResource {
         return name;
     }
 
-    public CarWashResource setName(String name) {
+    public StafffResource setName(String name) {
         this.name = name;
         return this;
     }
@@ -56,7 +56,7 @@ public class CarWashResource {
         return name_owner;
     }
 
-    public CarWashResource setName_owner(String name_owner) {
+    public StafffResource setName_owner(String name_owner) {
         this.name_owner = name_owner;
         return this;
     }
@@ -65,7 +65,7 @@ public class CarWashResource {
         return qualification;
     }
 
-    public CarWashResource setQualification(Double qualification) {
+    public StafffResource setQualification(Double qualification) {
         this.qualification = qualification;
         return this;
     }
@@ -74,7 +74,7 @@ public class CarWashResource {
         return available;
     }
 
-    public CarWashResource setAvailable(Double available) {
+    public StafffResource setAvailable(Double available) {
         this.available = available;
         return this;
     }

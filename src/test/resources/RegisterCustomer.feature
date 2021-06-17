@@ -9,6 +9,6 @@ Feature:  Registrar datos personales del cliente
     And mediante el metodo "POST" para agregar - Usuario
     And tengo el siguiente Usuario para agregar
       | First_Name | Last_Name | Email | Phone | Gender | Password | Location |
-      | Roberto | Vega |  terocal@hotmail.com |987654321|M       | rBT      | 6       |
+      | Roberto | Vega |  terocal@hotmail.com |987654321|M       | rBT      | 5       |
     When envio su peticion para agregar - Usuario
     Then se registro Usuario

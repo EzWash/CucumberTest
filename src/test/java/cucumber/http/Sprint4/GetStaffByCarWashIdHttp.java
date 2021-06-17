@@ -1,23 +1,26 @@
-package cucumber.http.Sprint1;
+package cucumber.http.Sprint4;
 
 import com.google.gson.Gson;
+import cucumber.resource.accounts.StaffResource;
 import cucumber.resource.accounts.StafffResource;
+import cucumber.resource.business.ServiceResource;
 import okhttp3.*;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EditCarWashHttp {
+public class GetStaffByCarWashIdHttp {
     private String url;
     private String path;
     private String method;
     private Response response;
-    private List<String> carwashes;
+    private List<String> Staff;
     private List<Integer> responseStatusCodes;
 
-    public EditCarWashHttp() {
-        this.carwashes = new ArrayList<String>();
+    public GetStaffByCarWashIdHttp() {
+        this.Staff = new ArrayList<String>();
         this.responseStatusCodes = new ArrayList<Integer>();
     }
 
@@ -45,33 +48,31 @@ public class EditCarWashHttp {
         this.method = method;
     }
 
-    public void actualizarCarWash(StafffResource carWash) throws IOException {
-        Gson gson = new Gson();
-        this.carwashes.add(gson.toJson(carWash, StafffResource.class));
-    }
-
     public void make() throws IOException {
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         MediaType mediaType = MediaType.parse("application/json");
-
-        for (int i = 0; i < this.carwashes.size(); i++) {
-            RequestBody body = RequestBody.create(this.carwashes.get(i), mediaType);
+        for (int i = 0; i < this.Staff.size(); i++) {
+            RequestBody body = RequestBody.create(this.Staff.get(i), mediaType);
 
             Request request = new Request.Builder()
                     .url(this.buildUrl())
-                    .addHeader("Content-Type", "application/json")
-                    .method(this.method, body)
+                    .method(this.method, null)
                     .build();
-
             this.response = client.newCall(request).execute();
             this.responseStatusCodes.add(this.response.code());
         }
     }
-    private String buildUrl() {
-        return this.url + this.path;
+
+    public StafffResource getStaff() throws IOException {
+        Gson gson = new Gson();
+        ResponseBody responseBody = this.response.body();
+        return gson.fromJson(responseBody.string(), (Type) StaffResource.class);
     }
 
+    private String buildUrl(){
+        return this.url + this.path;
+    }
     public List<Integer> getResponseStatusCodes() {
         return this.responseStatusCodes;
     }
