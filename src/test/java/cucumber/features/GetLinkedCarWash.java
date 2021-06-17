@@ -20,7 +20,7 @@ public class GetLinkedCarWash {
         this.getLinkedCarWash = new GetLinkedCarWashHttp();
     }
 
-    @Given("que ingreso al API {stringress_to_APIng} para ver user_carwash")
+    @Given("que ingreso al API {string} para ver user_carwash")
     public void ingressToAPI(String string) {
         this.getLinkedCarWash.setUrl(string);
     }
