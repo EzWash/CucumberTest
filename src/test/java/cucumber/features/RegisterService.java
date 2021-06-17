@@ -1,7 +1,7 @@
 package cucumber.features;
 
 import cucumber.http.Sprint1.RegisterServiceHttp;
-import cucumber.resource.business.ServiceResource;
+import cucumber.resource.business.Contrac;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -48,7 +48,7 @@ public class RegisterService {
         List<Map<String,Double>> list2 = b.asMaps(String.class,double.class);
 
         for (int i = 0; i < list.size(); i++) {
-           ServiceResource serviceResource = new ServiceResource();
+           Contrac serviceResource = new Contrac();
             serviceResource.setName(list.get(i).get("Name"));
             serviceResource.setDetails(list.get(i).get("Details"));
             serviceResource.setDescription(list.get(i).get("Description"));

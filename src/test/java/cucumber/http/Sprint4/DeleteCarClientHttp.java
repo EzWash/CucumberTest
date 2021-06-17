@@ -3,28 +3,30 @@ package cucumber.http.Sprint4;
 import com.google.gson.Gson;
 import cucumber.resource.accounts.StaffResource;
 import cucumber.resource.accounts.StafffResource;
-import okhttp3.*;
+import cucumber.resource.interactions.VehicleResource;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GetStaffByCarWashIdHttp {
+public class DeleteCarClientHttp {
     private String url;
     private String path;
     private String method;
     private Response response;
-    private List<String> Staff;
+    private List<String> VehicleResource;
     private List<Integer> responseStatusCodes;
-
-    public GetStaffByCarWashIdHttp() {
-        this.Staff = new ArrayList<String>();
-        this.responseStatusCodes = new ArrayList<Integer>();
-    }
-
     public String getPath() {
         return path;
+    }
+
+    public DeleteCarClientHttp() {
+        this.VehicleResource = new ArrayList<String>();
+        this.responseStatusCodes = new ArrayList<Integer>();
     }
 
     public void setPath(String path) {
@@ -50,23 +52,17 @@ public class GetStaffByCarWashIdHttp {
     public void make() throws IOException {
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
-        MediaType mediaType = MediaType.parse("application/json");
-        for (int i = 0; i < this.Staff.size(); i++) {
-            RequestBody body = RequestBody.create(this.Staff.get(i), mediaType);
-
-            Request request = new Request.Builder()
-                    .url(this.buildUrl())
-                    .method(this.method, null)
-                    .build();
-            this.response = client.newCall(request).execute();
-            this.responseStatusCodes.add(this.response.code());
-        }
+        Request request = new Request.Builder()
+                .url(this.buildUrl())
+                .method(this.method, null)
+                .build();
+        this.response = client.newCall(request).execute();
     }
 
-    public StafffResource getStaff() throws IOException {
+    public cucumber.resource.interactions.VehicleResource deleteVehicle() throws IOException {
         Gson gson = new Gson();
         ResponseBody responseBody = this.response.body();
-        return gson.fromJson(responseBody.string(), (Type) StaffResource.class);
+        return gson.fromJson(responseBody.string(), VehicleResource.class);
     }
 
     private String buildUrl(){

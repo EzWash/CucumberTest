@@ -1,7 +1,7 @@
 package cucumber.http.Sprint1;
 
 import com.google.gson.Gson;
-import cucumber.resource.business.ServiceResource;
+import cucumber.resource.business.Contrac;
 import okhttp3.*;
 
 import java.io.IOException;
@@ -45,9 +45,9 @@ public class RegisterServiceHttp {
         this.method = method;
     }
 
-    public void createServicio(ServiceResource service) throws IOException {
+    public void createServicio(Contrac service) throws IOException {
         Gson gson = new Gson();
-        this.services.add(gson.toJson(service, ServiceResource.class));
+        this.services.add(gson.toJson(service, Contrac.class));
     }
 
     public void make() throws IOException {

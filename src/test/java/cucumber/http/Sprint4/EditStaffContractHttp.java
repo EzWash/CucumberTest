@@ -1,23 +1,25 @@
-package cucumber.http.Sprint2;
+package cucumber.http.Sprint4;
 
 import com.google.gson.Gson;
-import cucumber.resource.business.Contrac;
+import cucumber.resource.accounts.StaffResource;
+import cucumber.resource.accounts.UserResource;
 import okhttp3.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EditServiceCarWashHttp {
+public class EditStaffContractHttp {
+
     private String url;
     private String path;
     private String method;
     private Response response;
-    private List<String> services;
+    private List<String> contract;
     private List<Integer> responseStatusCodes;
 
-    public EditServiceCarWashHttp() {
-        this.services = new ArrayList<String>();
+    public EditStaffContractHttp() {
+        this.contract = new ArrayList<String>();
         this.responseStatusCodes = new ArrayList<Integer>();
     }
 
@@ -45,9 +47,9 @@ public class EditServiceCarWashHttp {
         this.method = method;
     }
 
-    public void updateServiceData(Contrac serviceResource) throws IOException {
+    public void updateStaffContract(StaffResource staffResource) throws IOException {
         Gson gson = new Gson();
-        this.services.add(gson.toJson(serviceResource, Contrac.class));
+        this.contract.add(gson.toJson(staffResource, StaffResource.class));
     }
 
     public void make() throws IOException {
@@ -55,8 +57,8 @@ public class EditServiceCarWashHttp {
                 .build();
         MediaType mediaType = MediaType.parse("application/json");
 
-        for (int i = 0; i < this.services.size(); i++) {
-            RequestBody body = RequestBody.create(this.services.get(i), mediaType);
+        for (int i = 0; i < this.contract.size(); i++) {
+            RequestBody body = RequestBody.create(this.contract.get(i), mediaType);
 
             Request request = new Request.Builder()
                     .url(this.buildUrl())
@@ -75,4 +77,5 @@ public class EditServiceCarWashHttp {
     public List<Integer> getResponseStatusCodes() {
         return this.responseStatusCodes;
     }
+
 }

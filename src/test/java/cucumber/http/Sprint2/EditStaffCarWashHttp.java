@@ -2,7 +2,6 @@ package cucumber.http.Sprint2;
 
 import com.google.gson.Gson;
 import cucumber.resource.accounts.StaffResource;
-import cucumber.resource.business.ServiceResource;
 import okhttp3.*;
 
 import java.io.IOException;

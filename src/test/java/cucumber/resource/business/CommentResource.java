@@ -3,7 +3,7 @@ package cucumber.resource.business;
 public class CommentResource {
     private Long id;
     private String description;
-    private Integer qualification;
+    private Double qualification;
 
     public Long getId() {
         return id;
@@ -23,11 +23,11 @@ public class CommentResource {
         return this;
     }
 
-    public Integer getQualification() {
+    public Double getQualification() {
         return qualification;
     }
 
-    public CommentResource setQualification(Integer qualification) {
+    public CommentResource setQualification(Double qualification) {
         this.qualification = qualification;
         return this;
     }

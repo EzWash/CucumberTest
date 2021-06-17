@@ -1,23 +1,24 @@
-package cucumber.http.Sprint2;
+package cucumber.http.Sprint4;
 
 import com.google.gson.Gson;
-import cucumber.resource.business.Contrac;
+import cucumber.resource.business.CommentResource;
+import cucumber.resource.business.ReportResource;
 import okhttp3.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EditServiceCarWashHttp {
+public class RegisterComment_CalificationHttp {
     private String url;
     private String path;
     private String method;
     private Response response;
-    private List<String> services;
+    private List<String> comments;
     private List<Integer> responseStatusCodes;
 
-    public EditServiceCarWashHttp() {
-        this.services = new ArrayList<String>();
+    public RegisterComment_CalificationHttp() {
+        this.comments = new ArrayList<String>();
         this.responseStatusCodes = new ArrayList<Integer>();
     }
 
@@ -45,9 +46,9 @@ public class EditServiceCarWashHttp {
         this.method = method;
     }
 
-    public void updateServiceData(Contrac serviceResource) throws IOException {
+    public void createComment(CommentResource commentResource) throws IOException {
         Gson gson = new Gson();
-        this.services.add(gson.toJson(serviceResource, Contrac.class));
+        this.comments.add(gson.toJson(commentResource, CommentResource.class));
     }
 
     public void make() throws IOException {
@@ -55,8 +56,8 @@ public class EditServiceCarWashHttp {
                 .build();
         MediaType mediaType = MediaType.parse("application/json");
 
-        for (int i = 0; i < this.services.size(); i++) {
-            RequestBody body = RequestBody.create(this.services.get(i), mediaType);
+        for (int i = 0; i < this.comments.size(); i++) {
+            RequestBody body = RequestBody.create(this.comments.get(i), mediaType);
 
             Request request = new Request.Builder()
                     .url(this.buildUrl())

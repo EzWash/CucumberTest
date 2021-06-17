@@ -1,6 +1,6 @@
 package cucumber.resource.business;
 
-public class ServiceResource {
+public class Contrac {
     private Long id;
     private String name;
     private String description;
@@ -12,7 +12,7 @@ public class ServiceResource {
         return id;
     }
 
-    public ServiceResource setId(Long id) {
+    public Contrac setId(Long id) {
         this.id = id;
         return this;
     }
@@ -21,7 +21,7 @@ public class ServiceResource {
         return name;
     }
 
-    public ServiceResource setName(String name) {
+    public Contrac setName(String name) {
         this.name = name;
         return this;
     }
@@ -30,7 +30,7 @@ public class ServiceResource {
         return description;
     }
 
-    public ServiceResource setDescription(String description) {
+    public Contrac setDescription(String description) {
         this.description = description;
         return this;
     }
@@ -39,7 +39,7 @@ public class ServiceResource {
         return is_promotion;
     }
 
-    public ServiceResource setIs_promotion(Double is_promotion) {
+    public Contrac setIs_promotion(Double is_promotion) {
         this.is_promotion = is_promotion;
         return this;
     }
@@ -48,7 +48,7 @@ public class ServiceResource {
         return price;
     }
 
-    public ServiceResource setPrice(Double price) {
+    public Contrac setPrice(Double price) {
         this.price = price;
         return this;
     }
@@ -57,7 +57,7 @@ public class ServiceResource {
         return details;
     }
 
-    public ServiceResource setDetails(String details) {
+    public Contrac setDetails(String details) {
         this.details = details;
         return this;
     }
